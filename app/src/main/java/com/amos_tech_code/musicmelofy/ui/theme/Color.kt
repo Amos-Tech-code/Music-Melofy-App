@@ -9,6 +9,7 @@ val SkyBlue = Color(0xFFB2EBF2)
 val Charcoal = Color(0xFF37474F)
 
 val White = Color(0xFFFFFFFF)
+val Black = Color.Black
 val AlmostBlack = Color(0xFF121212)
 
 val LightGray = Color(0xFFDADADA)

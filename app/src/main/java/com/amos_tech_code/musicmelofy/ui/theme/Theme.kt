@@ -15,7 +15,7 @@ private val LightColorScheme = lightColorScheme(
     secondary = Aqua,
     background = White,
     surface = LightGray,
-    onPrimary = White,
+    onPrimary = Black,
     onBackground = AlmostBlack,
     onSurface = AlmostBlack,
 )
@@ -25,7 +25,7 @@ private val DarkColorScheme = darkColorScheme(
     secondary = Aqua,
     background = AlmostBlack,
     surface = Charcoal,
-    onPrimary = AlmostBlack,
+    onPrimary = White,
     onBackground = LightGray,
     onSurface = LightGray,
 )

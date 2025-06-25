@@ -3,6 +3,9 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.ksp)
+    alias(libs.plugins.kotlin.serialization)
+    id("kotlin-parcelize")
+
 }
 
 android {
@@ -71,8 +74,20 @@ dependencies {
     implementation(libs.retrofit)
     // Converter Gson
     implementation(libs.converter.gson)
+    //Kotlin Serialization
+    implementation(libs.kotlinx.serialization.json)
     //Logging
     implementation(libs.logging.interceptor)
     //Navigation
     implementation(libs.androidx.navigation.compose)
+    //Material3-Extended icons
+    implementation (libs.androidx.material.icons.extended)
+    //Coil
+    implementation("io.coil-kt.coil3:coil-compose:3.1.0")
+    implementation("io.coil-kt.coil3:coil-network-okhttp:3.1.0")
+    //Exoplayer
+    implementation("androidx.media3:media3-exoplayer:1.7.1")
+    implementation("androidx.media3:media3-session:1.7.1")
+    implementation("androidx.media3:media3-ui:1.7.1")
+    implementation("androidx.media:media:1.7.0")
 }

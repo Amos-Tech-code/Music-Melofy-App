@@ -1,6 +1,7 @@
 package com.amos_tech_code.musicmelofy
 
 import android.app.Application
+import com.amos_tech_code.musicmelofy.data.helper.MelofyNotificationHelper
 import com.amos_tech_code.musicmelofy.di.NetworkModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
@@ -15,5 +16,6 @@ class MelofyApp : Application() {
             androidContext(this@MelofyApp)
             modules(defaultModule, NetworkModule().module)
         }
+        MelofyNotificationHelper.createNotificationChannel(this)
     }
 }
